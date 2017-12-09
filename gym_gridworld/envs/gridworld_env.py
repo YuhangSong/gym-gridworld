@@ -31,7 +31,7 @@ class GridworldEnv(gym.Env):
     
         ''' initialize system state ''' 
         this_file_path = os.path.dirname(os.path.realpath(__file__))
-        self.grid_map_path = os.path.join(this_file_path, 'plan0.txt')        
+        self.grid_map_path = os.path.join(this_file_path, 'plan00.txt')        
         self.start_grid_map = self._read_grid_map(self.grid_map_path) # initial grid map
         self.current_grid_map = copy.deepcopy(self.start_grid_map)  # current grid map
         self.observation = self._gridmap_to_observation(self.start_grid_map)
